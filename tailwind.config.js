@@ -26,8 +26,15 @@ module.exports = {
 			animation: {
 				marquee: 'marquee 40s linear infinite',
 				marquee2: 'marquee2 40s linear infinite',
+				"left-right": 'left_right 3s linear infinite',
+				"pro": 'pro 3s linear infinite',
+				"bg-button": 'bgButton 3s linear infinite',
+				"bg-section": 'bgSection 5s linear infinite',
 			},
 			keyframes: {
+				left_right: {
+					'50%': { transform: 'translateX(-100px)' }
+				},
 				marquee: {
 					'0%': { transform: 'translateX(0%)' },
 					'100%': { transform: 'translateX(-100%)' },
@@ -36,6 +43,34 @@ module.exports = {
 					'0%': { transform: 'translateX(100%)' },
 					'100%': { transform: 'translateX(0%)' },
 				},
+				pro: {
+					'50%': {
+						"background-color": '#4f46e5',
+						"color": '#fff',
+					}
+				},
+				bgButton: {
+					"0%": {
+						"background-position": "0% 50%"
+					},
+					"50%": {
+						"background-position": "100% 50%"
+					},
+					"100%": {
+						"background-position": "0% 50%"
+					}
+				},
+				bgSection: {
+					"0%": {
+						"background-position": "0% 0%"
+					},
+					"50%": {
+						"background-position": "0% 100%"
+					},
+					"100%": {
+						"background-position": "0% 0%"
+					}
+				}
 			},
 		},
 	},
