@@ -26,14 +26,17 @@ module.exports = {
 			animation: {
 				marquee: 'marquee 40s linear infinite',
 				marquee2: 'marquee2 40s linear infinite',
-				"left-right": 'left_right 3s linear infinite',
+				"vedette": 'vedette 4s linear infinite',
 				"pro": 'pro 3s linear infinite',
-				"bg-button": 'bgButton 3s linear infinite',
+				"bg-button": 'bgButton 2.5s linear infinite',
 				"bg-section": 'bgSection 5s linear infinite',
 			},
 			keyframes: {
-				left_right: {
-					'50%': { transform: 'translateX(-100px)' }
+				vedette: {
+					'25%': { transform: 'translateX(-100px)' },
+					'50%': { transform: 'translateY(200px)' },
+					'75%': { transform: 'translate(100px,100px)' }
+
 				},
 				marquee: {
 					'0%': { transform: 'translateX(0%)' },
@@ -75,4 +78,5 @@ module.exports = {
 		},
 	},
 	plugins: [],
+	darkMode: 'selector',
 }
