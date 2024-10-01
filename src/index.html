@@ -22,7 +22,7 @@
 
     <!-- HEADER -->
     <header id="header" class="sticky top-0 z-20 transition-all border-b border-transparent py-5">
-        <div class='progress-loading h-1 w-[0%] absolute z-40 top-0 bg-indigo-600 transition-all duration-200'></div>
+        <div class='progress-loading h-1 w-[0%] absolute z-40 top-0 bg-purple-600 transition-all duration-200'></div>
         <div class="my-container">
             <!--note: my-container class customed in file input.css-->
             <div class="flex flex-col lg:flex-row justify-between items-center">
@@ -1206,7 +1206,7 @@
                 const scrollPosition = window.scrollY;
                 const headerHeight = header.offsetHeight;
                 const originClass = ["border-transparent", "py-5"];
-                const scrollClass = ["border-gray-200", "dark:border-slate-700", "bg-white/80", "dark:bg-slate-900/80", "backdrop-blur-lg", "py-2"];
+                const scrollClass = ["border-slate-200", "dark:border-slate-800", "bg-white/80", "dark:bg-slate-900/80", "backdrop-blur-lg", "py-2"];
 
                 if (scrollPosition >= headerHeight) {
                     header.classList.remove(...originClass);
