@@ -20,9 +20,9 @@ module.exports = {
 					'"Noto Color Emoji"',
 				]
 			},
-			fontSize: {
+			/*fontSize: {
 				"100": "100px"
-			},
+			},*/
 			animation: {
 				marquee: 'marquee 40s linear infinite',
 				marquee2: 'marquee2 40s linear infinite',
